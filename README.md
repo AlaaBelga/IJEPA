@@ -6,13 +6,15 @@ A minimalist implementation of the **Joint Embedding Predictive Architecture (JE
 
 The model learns to predict the **latent embedding** of a masked image region from its surrounding context — without relying on pixel-level reconstruction alone.
 
+![MiniJEPA Example Prediction](J/Example.png)
+
 ---
 
 ## Project Structure
 
 ```
 IJEPA/
-└── I JEPA/
+└── I-JEPA/
     ├── MiniJEPA_Colab_Training.ipynb   # ⭐ Self-contained Colab training notebook
     └── mini_jepa/                       # Full local Python project
         ├── models/
@@ -42,7 +44,7 @@ IJEPA/
 
 ## Quickstart — Google Colab ⭐ (Recommended)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlaaBelga/IJEPA/blob/main/I%20JEPA/MiniJEPA_Colab_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlaaBelga/IJEPA/blob/main/I-JEPA/MiniJEPA_Colab_Training.ipynb)
 
 The notebook includes:
 - ✅ Model definitions (encoder, predictor, decoder)
@@ -55,7 +57,7 @@ The notebook includes:
 ## Local Setup
 
 ```bash
-cd "I JEPA/mini_jepa"
+cd "I-JEPA/mini_jepa"
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
