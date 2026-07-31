@@ -1,0 +1,6 @@
+body { font-family: Inter, system-ui, Arial, sans-serif; padding: 24px; }
+.container { max-width: 760px; margin: 0 auto; }
+.results { display: flex; gap: 16px; margin-top: 18px; }
+.results img { max-width: 320px; border: 1px solid #ddd; }
+button { margin-left: 8px; }
+.error { color: firebrick; margin-top: 12px }
