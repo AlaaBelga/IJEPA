@@ -42,8 +42,6 @@ IJEPA/
 
 ## Quickstart — Google Colab ⭐ (Recommended)
 
-Open the notebook directly in Google Colab — no setup, no downloads, trains on GPU in ~20 minutes.
-
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlaaBelga/IJEPA/blob/main/I%20JEPA/MiniJEPA_Colab_Training.ipynb)
 
 The notebook includes:
