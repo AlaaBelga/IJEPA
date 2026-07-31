@@ -5,7 +5,7 @@ Minimal React + Vite frontend that uploads a masked image to the FastAPI backend
 Run locally:
 
 ```bash
-cd mini_jepa/frontend
+cd frontend
 npm install
 npm run dev
 ```

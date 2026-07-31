@@ -14,19 +14,23 @@ The model learns to predict the **latent embedding** of a masked image region fr
 
 ```
 IJEPA/
-└── I-JEPA/
-    ├── MiniJEPA_Colab_Training.ipynb   # ⭐ Self-contained Colab training notebook
-    └── mini_jepa/                       # Full local Python project
-        ├── models/
-        │   ├── encoder.py               # ResNet18 context encoder
-        │   ├── predictor.py             # Embedding predictor MLP
-        │   └── decoder.py              # Patch decoder (transposed conv)
-        ├── train.py                     # Local training script
-        ├── infer.py                     # Local inference script
-        ├── app.py                       # FastAPI + Gradio demo
-        ├── utils.py                     # Masking, blending, visualization
-        ├── requirements.txt
-        └── README.md
+├── models/                     # PyTorch model definitions
+│   ├── encoder.py
+│   ├── predictor.py
+│   └── decoder.py
+├── frontend/                   # Vite/React frontend
+├── notebooks/                  # Jupyter notebooks
+│   └── MiniJEPA_Colab_Training.ipynb
+├── data/                       # Data directory
+├── outputs/                    # Training outputs and checkpoints
+├── app.py                      # FastAPI demo app
+├── infer.py                    # Inference script
+├── train.py                    # Training script
+├── utils.py                    # Helper functions
+├── requirements.txt            # Python dependencies
+├── README.md                   # Documentation
+├── JEPA_Presentation.pdf       # Slide deck
+└── Example.png                 # Example image
 ```
 
 ---
@@ -53,7 +57,7 @@ IJEPA/
 
 ## Quickstart — Google Colab ⭐ (Recommended)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlaaBelga/IJEPA/blob/main/I-JEPA/MiniJEPA_Colab_Training.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlaaBelga/IJEPA/blob/main/notebooks/MiniJEPA_Colab_Training.ipynb)
 
 The notebook includes:
 - ✅ Model definitions (encoder, predictor, decoder)
@@ -66,7 +70,6 @@ The notebook includes:
 ## Local Setup
 
 ```bash
-cd "I-JEPA/mini_jepa"
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
