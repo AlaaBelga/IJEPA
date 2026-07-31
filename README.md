@@ -6,7 +6,7 @@ A minimalist implementation of the **Joint Embedding Predictive Architecture (JE
 
 The model learns to predict the **latent embedding** of a masked image region from its surrounding context — without relying on pixel-level reconstruction alone.
 
-![MiniJEPA Example Prediction](J/Example.png)
+![MiniJEPA Example Prediction](Example.png)
 
 ---
 
