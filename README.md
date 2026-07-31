@@ -1,12 +1,12 @@
 # MiniJEPA — Self-Supervised Image Patch Prediction
 
-📊 **[View the Project Presentation (PDF)](JEPA_Presentation.pdf)**
+📊 **[View the Project Presentation (PDF)](resources/JEPA_Presentation.pdf)**
 
 A minimalist implementation of the **Joint Embedding Predictive Architecture (JEPA)** for hidden image patch prediction, trained on CIFAR-10.
 
 The model learns to predict the **latent embedding** of a masked image region from its surrounding context — without relying on pixel-level reconstruction alone.
 
-![MiniJEPA Example Prediction](Example.png)
+![MiniJEPA Example Prediction](resources/Example.png)
 
 ---
 
@@ -29,8 +29,9 @@ IJEPA/
 ├── utils.py                    # Helper functions
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Documentation
-├── JEPA_Presentation.pdf       # Slide deck
-└── Example.png                 # Example image
+├── resources/                  # Assets and documentation
+│   ├── JEPA_Presentation.pdf   # Slide deck
+│   └── Example.png             # Example image
 ```
 
 ---
